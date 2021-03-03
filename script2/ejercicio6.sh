@@ -1,15 +1,10 @@
 #!/bin/bash
-clear # Me gusta que la consola este limpia ;)
+clear
+# Realizar un script que admita como parámetros un directorio, especificado
+# mediante sunombre de ruta completa, y un número, correspondiente a un
+# tamaño en bytes. El programadebe recorrer de forma no recursiva el
+# directorio y contar el número de ficheros contenidosen el mismo que
+# tengan tamaño inferior al especificado como segundo parámetro. Al final
+# el script mostrará un mensaje indicando cuántos ficheros cumplen la
+# condición.
 
-expr 3 + 2
-expr 3 + 2 + 5
-expr 3 + 5 - 2
-expr 3 \* 5
-expr 17 \* 6
-expr 3 + 2 \* 5
-expr 12 / 4
-expr 4 \* 8 / 2
-expr 8 / 2 \* 4
-expr 7 \* 4 / 2
-expr 4 \* 7 / 2
-expr 7 / 2 \* 4
