@@ -1,10 +1,24 @@
 #!/bin/bash
-clear # Me gusta tener la consola lipia :)
 
-echo "saludos" $1
-echo "saludos" $2
-echo "saludos" $3
+# Realizar un script que admita un único parámetro correspondiente al nombre de un ficherode texto 
+# localizado en el directorio actual. Si el fichero existe, debe contar el número de líneas del mismo
+# a través del comando wc y mostrar un mensaje indicando dicho número. Si el fichero no existe, debe
+# mostrar un mensaje de error y salir.
 
-echo "El nombre del script es" $0
-echo "El conjunto de argumentos es" $*
+clear
+
+if (test -f $1);
+then
+    lineas=$(cat $1 | wc -l)
+    echo "El archivo ha sido encontrado, el numero de lineas es" $lineas;
+else
+    echo "ERROR > El archivo no existe";
+fi;
+
+
+
+
+
+
+
 
